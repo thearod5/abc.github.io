@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC - Open Source Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .btn-secondary:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .info-box h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 30px 40px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            header {
+                padding: 40px 20px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ABC</h1>
+            <p class="subtitle">Open Source Collaborative Development Platform</p>
+        </header>
+
+        <div class="content">
+            <section>
+                <h2>About ABC</h2>
+                <p>
+                    We are open sourcing the <span class="highlight">ABC source code</span> as a standalone application
+                    that runs locally on your computer. This powerful tool enables you to:
+                </p>
+                <ul>
+                    <li>Create new projects with ease</li>
+                    <li>Generate links between project components</li>
+                    <li>Generate comprehensive documentation from your projects</li>
+                    <li>Manage trace links and artifacts collaboratively</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Getting Started</h2>
+                <p>
+                    The ABC desktop application is available now. We provide complete project files that allow you
+                    to import the ABC codebase and all its requirements as a single project into the desktop app.
+                </p>
+
+                <div class="info-box">
+                    <h3>Quick Start Guide</h3>
+                    <p>
+                        1. Download the latest version of the ABC project<br>
+                        2. Upload it to your ABC desktop app<br>
+                        3. Make modifications to artifacts or trace links as needed<br>
+                        4. Download your modified project state<br>
+                        5. Submit your changes for review
+                    </p>
+                </div>
+
+                <p>
+                    Instructions for downloading and running ABC on your computer are available in the GitHub repository below.
+                </p>
+            </section>
+
+            <section>
+                <h2>Collaborative Change Management</h2>
+                <p>
+                    This project is designed for <span class="highlight">collaborative feedback</span>.
+                    Once you've made modifications to the ABC project in your local desktop app, you can download
+                    the state of your project and submit your changes for review to be approved into the published dataset.
+                </p>
+            </section>
+
+            <section>
+                <h2>Take Action</h2>
+                <div class="cta-buttons">
+                    <a href="https://nd-safa.notion.site/290dfde3f80d80649555dbb5a22cdbe9?pvs=105"
+                       class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        Submit Change Request
+                    </a>
+                    <a href="https://www.notion.so/nd-safa/290dfde3f80d8057ba82fdf05bc0ba07?v=290dfde3f80d8068b312000c19b06585"
+                       class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                        View Database Entries
+                    </a>
+                </div>
+            </section>
+
+            <section>
+                <div class="info-box">
+                    <h3>Need Help?</h3>
+                    <p>
+                        For detailed instructions, change management processes, and more information,
+                        visit our comprehensive Notion page using the links above.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 ABC Project. Open Source Collaborative Development.</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                Questions? Visit our Notion page or check the GitHub repository for more information.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
